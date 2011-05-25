@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 24
+/svn/!svn/ver/2/trunk/ui
+END
+joinserver.menu
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/2/trunk/ui/joinserver.menu
+END
+menudef.h
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/2/trunk/ui/menudef.h
+END
+tremulous_alien_builder_hud.menu
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/ui/tremulous_alien_builder_hud.menu
+END
+tremulous_humanarmoury.menu
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/ui/tremulous_humanarmoury.menu
+END
+error.menu
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/2/trunk/ui/error.menu
+END
+tremulous_teamselect.menu
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/ui/tremulous_teamselect.menu
+END
+quitcredit.menu
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/2/trunk/ui/quitcredit.menu
+END
+ingame_about.menu
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2/trunk/ui/ingame_about.menu
+END
+punkbuster.menu
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/2/trunk/ui/punkbuster.menu
+END
+mod.menu
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/2/trunk/ui/mod.menu
+END
+tremulous_alienclass.menu
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/ui/tremulous_alienclass.menu
+END
+loading.menu
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/2/trunk/ui/loading.menu
+END
+password.menu
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/2/trunk/ui/password.menu
+END
+tremulous_alien_general_hud.menu
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/ui/tremulous_alien_general_hud.menu
+END
+ingame.menu
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/2/trunk/ui/ingame.menu
+END
+tremulous_alienbuild.menu
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/ui/tremulous_alienbuild.menu
+END
+ingame_options.menu
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/ui/ingame_options.menu
+END
+teamscore.menu
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/2/trunk/ui/teamscore.menu
+END
+ingame.txt
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/2/trunk/ui/ingame.txt
+END
+ingame_callvote.menu
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/ui/ingame_callvote.menu
+END
+ingame_leave.menu
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2/trunk/ui/ingame_leave.menu
+END
+generate-infopanes.sh
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2/trunk/ui/generate-infopanes.sh
+END
+quit.menu
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/2/trunk/ui/quit.menu
+END
+tremulous_humandialogs.menu
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/ui/tremulous_humandialogs.menu
+END
+ingame_callteamvote.menu
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/ui/ingame_callteamvote.menu
+END
+connect.menu
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/2/trunk/ui/connect.menu
+END
+tremulous_default_hud.menu
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/ui/tremulous_default_hud.menu
+END
+tremulous_alienupgrade.menu
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/ui/tremulous_alienupgrade.menu
+END
+createserver.menu
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2/trunk/ui/createserver.menu
+END
+infopanes.def.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/2/trunk/ui/infopanes.def.h
+END
+tremulous.txt
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/2/trunk/ui/tremulous.txt
+END
+findplayer.menu
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/2/trunk/ui/findplayer.menu
+END
+main.menu
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/2/trunk/ui/main.menu
+END
+createfavorite.menu
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/ui/createfavorite.menu
+END
+menus.txt
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/2/trunk/ui/menus.txt
+END
+tremulous_human_hud.menu
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/ui/tremulous_human_hud.menu
+END
+ptrc.menu
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/2/trunk/ui/ptrc.menu
+END
+hud.txt
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/2/trunk/ui/hud.txt
+END
+tremulous_aliendialogs.menu
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/ui/tremulous_aliendialogs.menu
+END
+ingame_vote.menu
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/2/trunk/ui/ingame_vote.menu
+END
+serverinfo.menu
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/2/trunk/ui/serverinfo.menu
+END
+tremulous_humanitem.menu
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/ui/tremulous_humanitem.menu
+END
+tremulous_humanbuild.menu
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/ui/tremulous_humanbuild.menu
+END

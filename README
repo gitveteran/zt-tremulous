@@ -1,0 +1,216 @@
+
+___  ___    ___ ____ ____ _  _ _  _ _    ____ _  _ ____    ___  ____ ___ 
+  /   |      |  |__/ |___ |\/| |  | |    |  | |  | [__     |__] |  |  |  
+ /__  |      |  |  \ |___ |  | |__| |___ |__| |__| ___]    |__] |__|  |  
+                                                                         
+
+features:
+	triggerbot, wall hack, scanner, esp,
+	and some specialized stuff like auto team warnings,
+	triggerbot disables for some weapons, MaraSpit trigger,
+	grenade count down, advance goons/painsaw glow, leet speak command
+
+
+source code at: https://github.com/ztdretcher/zt-tremulous
+
+
+======example config======
+
+ZT_Walls_Mode 1
+ZT_Scanner_Mode 1
+ZT_Chamming_DiffGlow 1
+ZT_Chamming_GlowGren 1
+ZT_Triggerbot_Mode 1
+ZT_Triggerbot_DisableFastGuns 1
+ZT_ESP_Mode 1
+ZT_ESP_PlayerInfo_Mode 1
+ZT_ESP_Display_Mode 1
+ZT_ESP_NadeInfo_Mode 1
+ZT_ESP_ClassInfo_Mode 1
+	
+
+======ZT Cvar List======
+
+--walls--
+
+ZT_Walls_Mode:
+	values: default 0(off), 1 for on
+	description: Wall Hack (on/off)
+	
+--warn--
+
+ZT_Warn_Mode:
+	values: default 0(off), 1 for on
+	description: Auto Team Warnings (on/off)
+	
+ZT_Warn_DC:
+	values: default 0(off), 1 for on
+	description: Auto Say if OM/RC is Down
+	
+ZT_Warn_Nades:
+	values: default 0(off), 1 for on
+	description: Auto Say Nade When Seen
+
+--scanner--
+
+ZT_Scanner_Mode:
+	values: default 0(off), 1 for on
+	description: Scanner Hack
+	
+ZT_Scanner_Width:
+	values: default 75 
+	description: width of scanner
+	 
+ZT_Scanner_Height:
+	values: default 75
+	description: Height of scanner
+	
+ZT_Scanner_X:
+	values: default 10 
+	description: x placement of scanner
+	
+ZT_Scanner_Y:
+	values: default 125 
+	description: y placement of scanner
+	
+ZT_Scanner_Range:
+	values: default 2000 
+	description: distance
+
+--chamming--
+
+ZT_Chamming_Glow:
+	values: default 0(off), 1 for on
+	description: All Players Glow
+	
+ZT_Chamming_DiffGlow:
+	values: default 0(off), 1 for on
+	description: Glow color based on team
+	
+ZT_Chamming_GlowGren:
+	values: default 0(off), 1 for on
+	description: Grenades glow green
+
+--triggerbot--
+
+ZT_Triggerbot_Mode:
+	values: 
+	description: default 0(off), 1 for on
+	
+ZT_Triggerbot_Team:
+	values: default 0(auto), 1 for human, 2 for alien
+	description: Manually pick the target team
+	
+ZT_Triggerbot_Structures:
+	values: default 0(off), 1 for on
+	description: triggerbot will Shoot at enemy buildings
+	 
+ZT_Triggerbot_DisableFastGuns:
+	values: default 0(off), 1 for on
+	description: Disable triggerbot for guns/weapons that triggerboting is really odvous
+	
+ZT_Triggerbot_GrangerSpit:
+	values: default 0(off), 1 for on
+	description: granger spit triggerbot (broken/this doen't work vary well)
+	
+ZT_Triggerbot_GrangerClaw:
+	values: default 0(off), 1 for on
+	description: granger claw triggerbot (broken/this doen't work vary well)
+	
+ZT_Triggerbot_MaraLightning:
+	values: default 0(off), 1 for on
+	description: Mara lightning triggerbot (broken/this doen't work vary well)
+	
+ZT_Triggerbot_Cannnon:
+	values: default 0(off), 1 for on
+	description: Cannon triggerbot (broken/this doen't work vary well)
+	
+ZT_Triggerbot_Cannon_ShortRangeOnly:
+	values: default 0(off), can specify a distance
+	description: Cannon Will only shoot at specified distance
+	
+ZT_Triggerbot_MaraSpit:
+	values: default 0(off), 1 for on
+	description: Mara spit ( this feature was wrote for the most recent version of x server )
+
+--ESP--
+ZT_ESP_Mode:
+	values: default 0(off), 1 for on
+	description: Turn All ESP on or off
+	 
+ZT_ESP_PlayerInfo_Mode:
+	values: default 0(off), 1 for on
+	description: show name and health bar over the player
+	
+ZT_ESP_BuildHealth_Mode:
+	values: default 0(off), 1 for on
+	description: show building health
+	
+ZT_ESP_Display_Mode:
+	values: default 0(off), 1 for on
+	description: spawn hack and stage hack
+	
+ZT_ESP_Display_X:
+	values: default 10
+	description: where to place
+	
+ZT_ESP_Display_Y:
+	values: default 125
+	description: where to place
+	
+ZT_ESP_NadeInfo_Mode:
+	values: default 0(off), 1 for on
+	description: show nade count down
+	
+ZT_ESP_ClassInfo_Mode:
+	values: default 0(off), 1 for on
+	description: show the class and weapon of the players
+	
+ZT_ESP_AdvGlow_Mode:
+	values: default 0(off), 1 for on
+	description: advance goons have a different glow (added for x server where adv's is powerfully)
+	 
+ZT_ESP_PainGlow_Mode:
+	values: default 0(off), 1 for on
+	description: painsaws glow different (added for x server where painsaw is powerfully)
+
+--aimbot--
+	*** everything in aimbot is currently broken or misbehaving ***
+ZT_Aimbot_Team:
+	values: default 0(auto), 1 for aliens, 2 for humans
+	description: manualy select the enemy team
+	 
+ZT_Aimbot_FieldOfView:
+	values: default 15
+	description: Field of View
+	 
+ZT_Aimbot_ThroughWalls:
+	values: default 0(off), 1 for on
+	description: Shoot through walls 
+
+--weapons--
+ZT_Weapons_AutoGrangerEvo:
+	values: default 0(off) 1 for on
+	description: when possable granger will evol to adv granger ( i don't remember if i ever fixed this, might be broken )
+	
+====Commands====
+\leet <sentence>
+	description: convert capital letters in sentence to leet speak then say it in chat
+	example:
+		\leet HEllO wOrlD
+			would say: |-|3ll0 w0rl|)
+		\leet FoGet U nOObS
+			would say: |=o6et |_| n00b5
+\ZTcmd rtd
+	description: auto say !rtd every 30 seconds, maded for the starburst server
+
+
+
+code at: https://github.com/ztdretcher/zt-tremulous
+group at: http://groups.google.com/group/zt-bot (this might not be very active i've never used google groups before; so have to see how it goes)
+email at: ztdretcher@gmx.com
+
+
+final thoughts:
+	Im not responsible for any thing you do with this. All my code is under gpl v2.
+	Some source is based off of thz ( http://code.google.com/p/thz/ )
