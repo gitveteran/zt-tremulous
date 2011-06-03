@@ -31,19 +31,21 @@ void ZT_lookForArmory( void )
 	centity_t *cent;
 	float dist;
 	vec3_t relOrigin;
-    vec3_t origin      = {0.0f, 0.0f, 0.0f};
-    int g;
-    int found = 0;
+	vec3_t origin      = {0.0f, 0.0f, 0.0f};
+	int g;
+	int found = 0;
+	int ammo, clips;
+	int maxAmmo, maxClips;
 
-    int ammo, clips;
-    int maxAmmo, maxClips;
+
+	if ( ZT_Weapons_BuyAmmo.integer == 0 ) { return; }
 
 	if ( cg.snap->ps.stats[ STAT_PTEAM ] == PTE_ALIENS ) { return; }
 	if ( cg.snap->ps.weapon == WP_HBUILD ) { return; }
 	if ( cg.snap->ps.weapon == WP_HBUILD2 ) { return; }
 
-    if ( cg.snap->ps.persistant[ PERS_TEAM ] == TEAM_SPECTATOR ) { return; }
-    if(cg.snap->ps.pm_flags & PMF_FOLLOW) { return ; }
+	if ( cg.snap->ps.persistant[ PERS_TEAM ] == TEAM_SPECTATOR ) { return; }
+	if(cg.snap->ps.pm_flags & PMF_FOLLOW) { return ; }
 
 	for( i = 0; i < cg.snap->numEntities; i++ )
 	{

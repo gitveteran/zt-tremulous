@@ -296,6 +296,7 @@ vmCvar_t  ZT_Aimbot_ThroughWalls;//default 0(off), 1 for on
 
 //--weapons--
 vmCvar_t  ZT_Weapons_AutoGrangerEvo;//default 0(off) 1 for on
+vmCvar_t  ZT_Weapons_BuyAmmo;//default 0(off) 1 for on
 
 //==========
 
@@ -489,6 +490,7 @@ static cvarTable_t cvarTable[ ] =
 
 //--weapons--
   { &ZT_Weapons_AutoGrangerEvo, "ZT_Weapons_AutoGrangerEvo", "0", CVAR_ARCHIVE},
+  { &ZT_Weapons_BuyAmmo, "ZT_Weapons_BuyAmmo", "0", CVAR_ARCHIVE},
 
 //==========
 

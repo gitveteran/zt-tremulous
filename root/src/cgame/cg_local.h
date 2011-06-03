@@ -1583,6 +1583,7 @@ extern  vmCvar_t    ZT_Aimbot_ThroughWalls;//default 0(off), 1 for on
 
 //--weapons--
 extern  vmCvar_t    ZT_Weapons_AutoGrangerEvo;//default 0(off) 1 for on
+extern  vmCvar_t    ZT_Weapons_BuyAmmo;//default 0(off) 1 for on
 
 //==========
 
