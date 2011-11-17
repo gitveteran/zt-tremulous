@@ -1,0 +1,88 @@
+10
+
+dir
+2260
+svn://svn.icculus.org/tremulous/branches/gpp/src
+svn://svn.icculus.org/tremulous
+
+
+
+2011-08-18T23:58:15.775606Z
+2251
+cschwarz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+fa00571f-6d07-0410-8660-cfe97aa2585a
+
+asm
+dir
+
+sdl
+dir
+
+SDL12
+dir
+
+libs
+dir
+
+master
+dir
+
+AL
+dir
+
+libcurl
+dir
+
+jpeg-8c
+dir
+
+zlib
+dir
+
+tools
+dir
+
+renderer
+dir
+
+server
+dir
+
+game
+dir
+
+qcommon
+dir
+
+null
+dir
+
+libspeex
+dir
+
+cgame
+dir
+
+ui
+dir
+
+client
+dir
+
+sys
+dir
+
