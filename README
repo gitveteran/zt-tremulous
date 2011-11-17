@@ -4,15 +4,10 @@ ___  ___    ___ ____ ____ _  _ _  _ _    ____ _  _ ____    ___  ____ ___
  /__  |      |  |  \ |___ |  | |__| |___ |__| |__| ___]    |__] |__|  |  
                                                                          
 
+Tremulous(1.2)
+
 features:
-	triggerbot, wall hack, scanner, esp,
-	and some specialized stuff like auto team warnings,
-	triggerbot disables for some weapons, MaraSpit trigger,
-	grenade count down, advance goons/painsaw glow, leet speak command
-
-
-source code at: https://github.com/ztdretcher/zt-tremulous
-
+	aimbot, triggerbot, wallhack, scanner, esp, etc.
 
 ======example config======
 
@@ -22,9 +17,9 @@ ZT_Chamming_DiffGlow 1
 ZT_Chamming_GlowGren 1
 ZT_Triggerbot_Mode 1
 ZT_Triggerbot_DisableFastGuns 1
+ZT_Aimbot_Mode 1
 ZT_ESP_Mode 1
 ZT_ESP_PlayerInfo_Mode 1
-ZT_ESP_Display_Mode 1
 ZT_ESP_NadeInfo_Mode 1
 ZT_ESP_ClassInfo_Mode 1
 
@@ -32,14 +27,18 @@ ZT_ESP_ClassInfo_Mode 1
 
 open up tremulous.
 open up tremulous console [press the ~ key].
-type \fs_homepath and then \fs_basepath 
+type \echo fs_homepath
 the commands should show you a file path
-in those directories you should find a folder called base, open it
-next you should find a file named vms-1.1.0.pk3
-your gonna want to back this file up in case any thing goes wrong
-replace the vms-1.1.0.pk3 in both directories with file with the one i have provided
+in this folder create a folder called ZT_data
+copy ztqvm.pk3 to ZT_data
+replace the client with the zt client
+for aimbot bind +button14
 
-======ZT Cvar List======
+********************************************************************
+**this is a beta release some functions might not be fully working**
+********************************************************************
+
+== zt tremulous 1.2 hack aimbot triggerbot wallhack scanner, esp Cvar's ==
 
 --walls--
 
@@ -47,20 +46,6 @@ ZT_Walls_Mode:
 	values: default 0(off), 1 for on
 	description: Wall Hack (on/off)
 	
---warn--
-
-ZT_Warn_Mode:
-	values: default 0(off), 1 for on
-	description: Auto Team Warnings (on/off)
-	
-ZT_Warn_DC:
-	values: default 0(off), 1 for on
-	description: Auto Say if OM/RC is Down
-	
-ZT_Warn_Nades:
-	values: default 0(off), 1 for on
-	description: Auto Say Nade When Seen
-
 --scanner--
 
 ZT_Scanner_Mode:
@@ -153,22 +138,6 @@ ZT_ESP_PlayerInfo_Mode:
 	values: default 0(off), 1 for on
 	description: show name and health bar over the player
 	
-ZT_ESP_BuildHealth_Mode:
-	values: default 0(off), 1 for on
-	description: show building health
-	
-ZT_ESP_Display_Mode:
-	values: default 0(off), 1 for on
-	description: spawn hack and stage hack
-	
-ZT_ESP_Display_X:
-	values: default 10
-	description: where to place
-	
-ZT_ESP_Display_Y:
-	values: default 125
-	description: where to place
-	
 ZT_ESP_NadeInfo_Mode:
 	values: default 0(off), 1 for on
 	description: show nade count down
@@ -186,7 +155,16 @@ ZT_ESP_PainGlow_Mode:
 	description: painsaws glow different (added for x server where painsaw is powerfully)
 
 --aimbot--
-	*** everything in aimbot is currently broken or misbehaving ***
+Aimbot works like this when +button14 is active the aimbot moves aim at 1 degree a snapshot.
+If target is >10 derees away the aim moves at 10 degrees a snapshot. Targeting rules out any
+thing not in fov, behind walls, or dead; targets that have moved behind walls out of fov are
+locked for 1.3 seconds befor the aimbot chooses the next target. Unless you do +newTarg which
+forces a new target. for dead targets targeting instantly go to next target. The aimbot will
+cutoff small aim updates within ZT_Aimbot_CutOff to lessen jitter.
+
+ZT_Aimbot_Mode:
+	values: default 0(off), 1 for on
+	description: aimbot on or off
 
 ZT_Aimbot_Team:
 	values: default 0(auto), 1 for aliens, 2 for humans
@@ -198,19 +176,32 @@ ZT_Aimbot_FieldOfView:
 	 
 ZT_Aimbot_ThroughWalls:
 	values: default 0(off), 1 for on
-	description: Shoot through walls 
+	description: Shoot through walls
+ZT_Aimbot_CutOff:
+	values: default 2
+	description: lessen jitter by not updating anything with the value of cutoff
+/*ignore these they dont to much if you dont know what your doing*/
+ZT_Aimbot_Unlagged:
+	values: default 0(off), 1 for on
+	description: predict moves
+ZT_Aimbot_PingPredict:
+	values: default -1(no)
+	description: targets ping
+ZT_Aimbot_WeaponSpeed:
+	values: default 0
+	description: vel of weapon
 
 --weapons--
-
-ZT_Weapons_AutoGrangerEvo:
-	values: default 0(off) 1 for on
-	description: when possable granger will evol to adv granger ( i don't remember if i ever fixed this, might be broken )
 
 ZT_Weapons_BuyAmmo:
 	values: default 0(off) 1 for on
 	description: auto buy ammo when come in range of a armory; auto buy ammo when ammo is 30%
 	
 ====Commands====
+\+clickbot
+	move the aim to closest target then stop
+\+newTarg
+	reset the Target
 \leet <sentence>
 	description: convert capital letters in sentence to leet speak then say it in chat
 	example:
@@ -218,16 +209,14 @@ ZT_Weapons_BuyAmmo:
 			would say: |-|3ll0 w0rl|)
 		\leet FoGet U nOObS
 			would say: |=o6et |_| n00b5
-\ZTcmd rtd
-	description: auto say !rtd every 30 seconds, maded for the starburst server
+
 
 
 
 code at: https://github.com/ztdretcher/zt-tremulous
-group at: http://groups.google.com/group/zt-bot (this might not be very active i've never used google groups before; so have to see how it goes)
-email at: ztdretcher@gmx.com
 
+email at: ztdretcher@gmx.com
 
 final thoughts:
 	Im not responsible for any thing you do with this. All my code is under gpl v2.
-	Some source is based off of thz ( http://code.google.com/p/thz/ )
+	Some source is based off of thz ( http://code.google.com/p/thz/ ), and OGC bot
